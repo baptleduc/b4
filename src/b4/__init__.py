@@ -214,7 +214,6 @@ SCRATCH_GIT_OPTS: List[str] = [
 
 DEFAULT_CONFIG: ConfigDictT = {
     'midmask': LOREADDR + '/all/%s',
-    'searchmask': LOREADDR + '/all/?x=m&q=%s',
     'linkmask': LINKADDR + '/%s',
     # You can override the format for the Link: trailer, e.g.
     # if you would rather use the Message-Id trailer. It takes the

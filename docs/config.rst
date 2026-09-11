@@ -135,6 +135,11 @@ These options control many of the core features of b4.
 
      Default: ``https://lore.kernel.org/all/?x=m&t=1&q=%s``
 
+     .. deprecated:: v0.16
+        This setting is ignored. Searches are performed by the ``liblore``
+        library, which builds the query URL from the server address in
+        :term:`b4.midmask`.
+
    :term:`b4.trailer-order`
      This lets you control the order of trailers that get added to your own
      custody section of the commit message. By default, b4 applies these
