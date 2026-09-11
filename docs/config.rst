@@ -83,10 +83,10 @@ These options control many of the core features of b4.
 
    :term:`b4.linkmask`
      B4 uses this setting to construct the URL in the ``Link:`` trailers.
-     If you want a shorter option, you can also use
-     ``https://msgid.link/%s``, which is an alias for lore.kernel.org.
+     If you would rather link to the archive itself, you can also use
+     ``https://lore.kernel.org/%s``.
 
-     Default: ``https://lore.kernel.org/%s``
+     Default: ``https://patch.msgid.link/%s``
 
    :term:`b4.linktrailermask`
      Overrides the format of the ``Link:`` trailer, in case you want to
@@ -97,7 +97,7 @@ These options control many of the core features of b4.
 
      The ``%s`` is the placeholder for the message-id.
 
-     Default: ``Link: https://lore.kernel.org/%s``
+     Default: ``Link: https://patch.msgid.link/%s``
 
      .. versionadded:: v0.13
 
@@ -119,7 +119,7 @@ These options control many of the core features of b4.
      Specifies the server from where to retrieve the messages specified by
      their message-id.
 
-     Default: ``https://lore.kernel.org/%s``
+     Default: ``https://lore.kernel.org/all/%s``
 
    :term:`b4.save-maildirs`
      The "mbox" file format is actually several incompatible standards,
